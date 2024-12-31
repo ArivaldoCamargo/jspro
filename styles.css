@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    --h1-font-size: 2rem;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: "Poppins";
+
+}
+.main{
+    margin-top: 30px;
+    padding: 50px;
+    
+}
+
+
+.foto_perfil{
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8%;
+    position:relative;
+}
+
+.section-title{
+    position: relative;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-top:10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+
+.section-title::after{
+position: absolute;
+content:"";
+width: 100px;
+height: 0.30rem;
+left:0;
+right: 0;
+margin: auto;
+top: 3.2rem;
+background-color: #0d6efd;
+
+}
+
+.sobre img{
+max-width: 270px;
+width: 70%;
+
+
+}
+.job img{
+    transition: 750ms;  
+}
+.jobs img:hover{
+    transform: scale(1.05);
+}
+
+.footer{
+    background-color: black;
+    height: 60px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .8rem;
+    color:#999;
+    margin-top: 30px;
+
+
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #7ad3f7;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 900px){
+    :root {
+        --h1-font-size: 4rem;
+    
+}
+.job img{
+    transition: 750ms;  
+}
+.jobs img:hover{
+    transform: scale(1.05);
+}
+}
